@@ -1,48 +1,116 @@
-body {
-    background: linear-gradient(90deg, rgb(208, 80, 33) ,  rgb(213, 232, 91));
-    background-size: 100%;
-    
-}
-.heading{
-    text-align:center;
-    color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-}
-
-
-.button{
-    height: 50px;
-    width: 50px;
-     margin-right: 3px; 
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: transparent;
-    color: blue;
-    
 
 }
 .container{
-    margin: auto;
-    width: 260px;
- 
-    cursor: pointer;
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    background: linear-gradient(135deg, pink, blue);
+    padding: 10px;
 }
-.input {
-    margin: auto;
-
-}
- .input input{
-    margin: auto;
-    margin-bottom: 5px;
-    padding: 2px;
-    width: 260px;
-    height: 30px;
-    border: 2px solid black;
+.todoapp {
+    width: 100vh;
+    max-width: fit-content;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
     border-radius: 10px;
-    background-color: transparent;
+}
+.todoapp h2 {
+    color: rgb(113, 71, 249);
+    display: flex;
+    align-items: center;
+
 
 }
-.flex{
+.todoapp h2 img {
+    width: 30px;
+    margin: 10px;
+}
+.row {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:rgb(239, 236, 236) ;
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input {
+    flex: 1;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    max-height: 20px;
+} 
+button {
+    border: none;
+    outline: none;
+    width: 10vh;
+    padding: 20px;
+    background:rgb(255, 136, 0) ;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+#listcontainer{
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+
+}
+ul li {
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 0%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.task {
+    text-decoration: line-through;
+    color: rgb(148, 147, 147);
+}
+ul li.task::before {
+    background-image: url(checked.png);
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    color: rgb(179, 30, 30);
+    background-color: rgb(252, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+
+    
+}
+ul li span:hover {
+    background-color: rgb(222, 223, 223);
 }

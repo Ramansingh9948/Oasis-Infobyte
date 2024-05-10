@@ -3,61 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link href="index.css" rel="stylesheet">
-
-     </head>
+    <title>To Do Web App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
 <body>
-
-<h1 class="heading">Calculator using HTML, CSS & Javascript</h1>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="input flex"> <input class="input" type="none"></input></div>
-
-<div class="container flex">
-
-
-    <div class="row">
-        <button class="button">C</button>
-        <button class="button">7</button>
-        <button class="button">4</button>
-        <button class="button">1</button>
-    </div>
+    <div class="container">
+        <div class="todoapp">
+        <h2>To-Do List<img src="icon.png" alt=""></h2>
+        <div class="row">
+            <input type="text" id="input" placeholder="Add Task">
+            <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="listcontainer">
+            <!-- <li class="task">raman</li>
+            <li>Singh</li>
+            <li>raman</li></ul> -->
+      
     
-    
-    <div class="row">
-        <button class="button">M+</button>
-        <button class="button">8</button>
-        <button class="button">5</button>
-        <button class="button">2</button>
     </div>
-
-   <div class="row">
-     <button class="button">M-</button>
-     <button class="button">9</button>
-     <button class="button">6</button>
-     <button class="button">3</button>
     </div>
-
-   <div class="row">
-     <button class="button">/</button>
-     <button class="button">*</button>
-     <button class="button">-</button>
-     <button class="button">-</button>
-   </div>
-  <div class="row">
-     <button class="button">0</button>
-     <button class="button">.</button>
-     <button class="button">=</button>
-     <button class="button">%</button>
-  </div>
-</div>
-
-</body>
-<script src="calc.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
