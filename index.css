@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(90deg, rgb(208, 80, 33) ,  rgb(213, 232, 91));
+    background-size: 100%;
+    
+}
+.heading{
+    text-align:center;
+    color: black;
+
+}
+
+
+.button{
+    height: 50px;
+    width: 50px;
+     margin-right: 3px; 
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    color: blue;
+    
+
+}
+.container{
+    margin: auto;
+    width: 260px;
+ 
+    cursor: pointer;
+}
+.input {
+    margin: auto;
+
+}
+ .input input{
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 2px;
+    width: 260px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+.flex{
+    display: flex;
+}
