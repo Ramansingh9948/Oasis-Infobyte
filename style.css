@@ -1,0 +1,77 @@
+
+.title, .livinyear  {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+img {
+    height: 20rem;
+    width: 50rem;
+    display: flex;
+    margin: auto;
+    border: .2px solid rgb(198, 99, 12);
+}
+.biography {
+    /* background: rgb(8, 7, 7); */
+    display: block;
+    padding: 2%;
+    text-align: center;
+    text-align: center;
+}
+.option {
+    display: block;
+    width: 20%;
+}
+.tit {
+    text-align: center;
+}
+.main {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: rgb(86, 7, 246);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+   /* <uniquifier>: Use a unique and descriptive class name */
+   /* <weight>: Use a value from 100 to 900 */
+  
+  .roboto-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+th, td {
+    text-align: left;
+   padding: 8px;
+  }
+  
+   /* th {
+   background-color: #f2f2f2;
+  }
+   */
+  tr.alt-row {
+   background-color: #f9f9f9;
+  } 
+  
+  caption {
+   font-size: 1.5em;
+   font-weight: bold;
+   margin-bottom: 10px;
+  }
+.theme {
+    width: 25px;
+    height: 25px;
+    
+}
+.head {
+    display: flex;
+}
